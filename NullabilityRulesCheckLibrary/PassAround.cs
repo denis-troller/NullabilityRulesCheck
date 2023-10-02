@@ -10,9 +10,9 @@ namespace NullabilityRulesCheckLibrary
     {
         public string Name { get; set; }
 
-        public void Method1()
+        public void Method1(string name)
         {
-            Console.Out.WriteLine(Name);
+            Console.Out.WriteLine($"{Name}-{name}");
         }
     }
 }
