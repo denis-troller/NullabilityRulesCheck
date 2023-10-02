@@ -6,5 +6,10 @@
         {
             arg1.Method1();
         }
+
+        public void Method2(PassAround? arg1)
+        {
+            arg1.Method1();
+        }
     }
 }
