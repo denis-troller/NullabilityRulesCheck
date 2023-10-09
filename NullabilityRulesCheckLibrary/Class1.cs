@@ -9,7 +9,7 @@
 
         public void Method2(PassAround? arg1)
         {
-            arg1.Method1(Name);
+            arg1.Method1(Name); 
         }
 
         public string Name { get; set; }
