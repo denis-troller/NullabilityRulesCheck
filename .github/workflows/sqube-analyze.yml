@@ -43,8 +43,6 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any  
-          SONAR_TOKEN_PERSO: ${{ secrets.SONAR_TOKEN_PERSO }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"denis-troller_NullabilityRulesCheck_AYsirVkhEpCFUfCykgPw" /d:sonar.token="${{ secrets.SONAR_TOKEN_PERSO }}" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
